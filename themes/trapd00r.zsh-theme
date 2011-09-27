@@ -88,7 +88,7 @@ prompt_jnrowe_precmd () {
     dir_status="%{$c1%}%n%{$c4%}@%{$c2%}%m%{$c0%}%{$c6%}->%{$(zsh_path)%} %{$c0%}(%{$c5%}%?%{$c0%})"
     PROMPT='%{$fg_bold[green]%}%p%{$reset_color%}${dir_status}%{$reset_color%}
 > '
-    RPROMPT='${vcs_info_msg_0_}'
+    RPROMPT='${vcs_info_msg_0_}%{$reset_color%}'
 fi
 }
 
